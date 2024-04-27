@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+    <title>User Dashboard</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="/leaderboard">Leaderboard</a></li>
-                <li><a href="/course-content">Course Content</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
+        <h1>User Dashboard</h1>
+        <!-- Add any navigation links here if needed -->
     </header>
     <main>
-        <section class="welcome-message">
-            <h2>Hello, <span id="user-fullname"></span>!</h2>
-            <p>Welcome to your personalized dashboard.</p>
+        <section id="course-selection">
+            <h2>Select Your Preferred Courses</h2>
+            <form id="course-selection-form">
+                <input type="checkbox" id="html" name="course" value="1">
+                <label for="html">Introduction to HTML</label><br>
+                <input type="checkbox" id="css" name="course" value="2">
+                <label for="css">CSS Fundamentals</label><br>
+                <input type="checkbox" id="js" name="course" value="3">
+                <label for="js">JavaScript Basics</label><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="selected-courses">
+            <h2>Your Selected Courses</h2>
+            <ul id="selected-courses-list">
+                <!-- Selected courses will be displayed here dynamically -->
+            </ul>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Your LMS</p>
-    </footer>
-
-    <!-- Include your client-side JavaScript file -->
+    <!-- Link to your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,30 +1,31 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Management App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Learning Management App</h1>
-    <form id="register-form">
-        <h2>Register</h2>
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="full_name" placeholder="Full Name" required>
-        <button type="submit">Register</button>
-    </form>
-    <form id="login-form">
-        <h2>Login</h2>
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
-    <form id="logout-form">
-        <button type="submit">Logout</button>
-    </form>
-    <script src="script.js"></script>
+  <h1>Course Selection</h1>
+
+  <form id="course-selection-form">
+    <h2>Select Your Preferred Courses:</h2>
+    <input type="checkbox" class="course-checkbox" value="1" id="course1">
+    <label for="course1">Introduction to HTML</label><br>
+    <input type="checkbox" class="course-checkbox" value="2" id="course2">
+    <label for="course2">CSS Fundamentals</label><br>
+    <input type="checkbox" class="course-checkbox" value="3" id="course3">
+    <label for="course3">JavaScript Basics</label><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Your Selected Courses:</h2>
+  <ul id="selected-courses-list"></ul>
+
+  <script src="script.js"></script>
 </body>
 </html>
